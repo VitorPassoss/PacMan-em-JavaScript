@@ -1,0 +1,94 @@
+*{
+    outline: 1px dotted purple;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'pacfont';
+    src: url(fonts/PAC-FONT.TTF) ;
+  }
+
+.pacman{
+    width: 50px;
+    height: 50px;
+    background-image: url('componentes/pacman.png');
+    display: inline-block;
+    line-height: 0px;
+}
+
+.wall{
+    width: 50px;
+    height: 50px;
+    background-image: url('componentes/wall.png');
+    display: inline-block;
+}
+
+.coin{
+    width: 50px;
+    height: 50px;
+    background-image: url('componentes/coin.png');
+    display: inline-block;
+}
+
+.ground{
+    width: 50px;
+    height: 50px;
+    background-image: url('componentes/bg.png');
+    display: inline-block;
+}
+div{
+    margin: -2px;
+    vertical-align: top;
+}
+.ghost{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('componentes/ghost1.png');
+}
+
+.score{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   color: #ffea00;
+  font-size: 40px;
+  font-family: 'pacfont';
+  outline: none;
+}
+
+.world{
+
+}
+
+#position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    outline: none;
+    
+}
+
+
+
+h1{
+    position: relative;
+    left: 90%;
+    bottom: 85px;
+    font-size: 40px;
+    color: rgb(204, 255, 0); 
+    outline: none;
+}
+
+p{
+    display: flex;
+    color: rgb(204, 255, 0);
+    font-size: 30px;
+    outline: none;
+}
+.audio{
+    display: flex;
+    justify-content: center;
+}
