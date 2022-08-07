@@ -280,7 +280,22 @@ var ghost3 = {
         
 
     setInterval(moveMob, 800);
-  
+
+     function adicionarMusica(){
+        document.getElementById('music').innerHTML +=`<div id="musicopt"><audio id="audio" class="audio" preload="metadata" autoplay loop  >
+        <source src="componentes/y2meta.com - Pacman Remix (320 kbps).mp3" type="audio/mpeg">
+        <p>seu site nao é compativel com a tecnologia de audio</p>
+    </audio></div>`
+
+     }
+
+
+     function RemoverMusica(){
+        document.getElementById('musicopt').remove()
+     }
+
+
+
    
     
 

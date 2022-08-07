@@ -96,3 +96,8 @@ p{
     outline: none;
     
 }
+
+.button{
+    background-color: white;
+    height: 60px;
+}
