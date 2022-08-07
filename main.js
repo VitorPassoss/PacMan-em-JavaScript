@@ -10,6 +10,23 @@ var map = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1]
 ]
  
+var seconds = 0;
+        var el = document.getElementById('seconds-counter');
+
+        function incrementSeconds() {
+            seconds += 1;
+            el.innerText = "Time :  " + seconds + " seconds.";
+            if(seconds === 120 ){
+                alert('your lost baby')
+                window.location.reload()
+            }
+        }
+
+var cancel = setInterval(incrementSeconds, 1000);
+
+
+
+
 
 var pacman = {
     x: 6,
@@ -279,7 +296,7 @@ var ghost3 = {
     
         
 
-    setInterval(moveMob, 800);
+    setInterval(moveMob, 850);
 
      function adicionarMusica(){
         document.getElementById('music').innerHTML +=`<div id="musicopt"><audio id="audio" class="audio" preload="metadata" autoplay loop  >
@@ -294,8 +311,7 @@ var ghost3 = {
         document.getElementById('musicopt').remove()
      }
 
-
-
+     
    
     
 
