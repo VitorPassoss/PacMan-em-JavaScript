@@ -35,10 +35,6 @@ var ghost3 = {
 }
 
 
-number = [1,2,3,4,5,6,7,8,9,10,11,12]
-
-
-
     function drawWorld() {
         
         document.getElementById('world').innerHTML="";
@@ -67,13 +63,15 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
                else if(map[y][x] === 9){
                 document.getElementById('world').innerHTML += "<div class='ghost'></div>"
                }
+
+            
           }
           document.getElementById('world').innerHTML += "<br>"
           
           
         }
 
-        document.getElementById('world').innerHTML += '<p class="score"> Game Score =  <h1> '+score+ '</h1></p>'
+        document.getElementById('world').innerHTML += '<p class="score"> Game Score =  <h1>  '+ score + ' </h1></p>'
 
     
     
@@ -91,7 +89,7 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
             if( map[pacman.y][pacman.x-1] !== 1){
                 if(map[pacman.y][pacman.x-1] === 2){
                     score = score + 10
-                    if(score >= 300){
+                    if(score >= 200){
                         drawWorld();
                         alert('your win baby')
                         window.location.reload()
@@ -110,7 +108,7 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
             if( map[pacman.y-1][pacman.x] !== 1){
                 if(map[pacman.y-1][pacman.x] === 2){
                     score = score + 10
-                    if(score >= 300){
+                    if(score >= 200){
                         drawWorld();
                         alert('your win baby')
                         window.location.reload()
@@ -130,7 +128,7 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
             if( map[pacman.y][pacman.x+1] !== 1){
                 if(map[pacman.y][pacman.x+1] === 2){
                     score = score + 10
-                    if(score >= 300){
+                    if(score >= 200){
                         drawWorld();
                         alert('your win baby')
                         window.location.reload()
@@ -150,7 +148,7 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
             if( map[pacman.y+1][pacman.x] !== 1){
                 if(map[pacman.y+1][pacman.x] === 2){
                     score = score + 10
-                    if(score >= 300){
+                    if(score >= 200){
                         drawWorld();
                         alert('your win baby')
                         window.location.reload()
@@ -281,7 +279,7 @@ number = [1,2,3,4,5,6,7,8,9,10,11,12]
     
         
 
-    setInterval(moveMob, 900);
+    setInterval(moveMob, 800);
   
    
     
