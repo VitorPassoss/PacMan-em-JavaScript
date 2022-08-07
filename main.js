@@ -16,8 +16,8 @@ var seconds = 0;
         function incrementSeconds() {
             seconds += 1;
             el.innerText = "Time :  " + seconds + " seconds.";
-            if(seconds === 120 ){
-                alert('your lost baby')
+            if(seconds === 60 ){
+                alert('times is over')
                 window.location.reload()
             }
         }
